@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DiskImagePackager</class>
+ <widget class="QMainWindow" name="DiskImagePackager">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>778</width>
+    <height>627</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Disk Image Packager</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="inputFolderText">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>100</y>
+      <width>481</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="MDFileText">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>220</y>
+      <width>481</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="outputFolderText">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>160</y>
+      <width>481</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>70</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Input Folder&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>130</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Output Folder&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>190</y>
+      <width>131</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Metadata File&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>20</y>
+      <width>481</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:20pt;&quot;&gt;Disk Image Packager for Preservica&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="progressBox">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>410</y>
+      <width>671</width>
+      <height>131</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>375</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;Progress&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="saveLogBttn">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>550</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Save Log</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startBttn">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>320</y>
+      <width>191</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Begin Packaging</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="inputBrowseBttn">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>94</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="outputBrowseBttn">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>153</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="MDFileBrowseBttn">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>214</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closeBttn">
+    <property name="geometry">
+     <rect>
+      <x>570</x>
+      <y>550</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Close Packager</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="SIPJARBrowseBttn">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>274</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="SIPJarText">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>280</y>
+      <width>481</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>250</y>
+      <width>291</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt;&quot;&gt;SIP Creator JAR &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>778</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>inputBrowseBttn</sender>
+   <signal>clicked()</signal>
+   <receiver>DiskImagePackager</receiver>
+   <slot>chooseInputFolder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>594</x>
+     <y>127</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>589</x>
+     <y>80</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>outputBrowseBttn</sender>
+   <signal>clicked()</signal>
+   <receiver>DiskImagePackager</receiver>
+   <slot>chooseOutputFolder()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>567</x>
+     <y>178</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>681</x>
+     <y>180</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>MDFileBrowseBttn</sender>
+   <signal>clicked()</signal>
+   <receiver>DiskImagePackager</receiver>
+   <slot>chooseMetadataFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>589</x>
+     <y>241</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>687</x>
+     <y>248</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>startBttn</sender>
+   <signal>clicked()</signal>
+   <receiver>DiskImagePackager</receiver>
+   <slot>startPackaging()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>335</x>
+     <y>391</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>549</x>
+     <y>329</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>saveLogBttn</sender>
+   <signal>clicked()</signal>
+   <receiver>DiskImagePackager</receiver>
+   <slot>saveLog()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>133</x>
+     <y>601</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>184</x>
+     <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>closeBttn</sender>
+   <signal>clicked()</signal>
+   <receiver>DiskImagePackager</receiver>
+   <slot>closeProgram()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>612</x>
+     <y>601</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>525</x>
+     <y>535</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>SIPJARBrowseBttn</sender>
+   <signal>clicked()</signal>
+   <receiver>DiskImagePackager</receiver>
+   <slot>chooseSIPJARFile()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>605</x>
+     <y>305</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>702</x>
+     <y>311</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>chooseInputFolder()</slot>
+  <slot>chooseOutputFolder()</slot>
+  <slot>chooseMetadataFile()</slot>
+  <slot>startPackaging()</slot>
+  <slot>saveLog()</slot>
+  <slot>closeProgram()</slot>
+  <slot>chooseSIPJARFile()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,145 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file '.\Interface.ui'
+#
+# Created by: PyQt4 UI code generator 4.11.4
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+try:
+    _fromUtf8 = QtCore.QString.fromUtf8
+except AttributeError:
+    def _fromUtf8(s):
+        return s
+
+try:
+    _encoding = QtGui.QApplication.UnicodeUTF8
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig, _encoding)
+except AttributeError:
+    def _translate(context, text, disambig):
+        return QtGui.QApplication.translate(context, text, disambig)
+
+class Ui_DiskImagePackager(object):
+    def setupUi(self, DiskImagePackager):
+        DiskImagePackager.setObjectName(_fromUtf8("DiskImagePackager"))
+        DiskImagePackager.resize(778, 627)
+        self.centralwidget = QtGui.QWidget(DiskImagePackager)
+        self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
+        self.inputFolderText = QtGui.QLineEdit(self.centralwidget)
+        self.inputFolderText.setGeometry(QtCore.QRect(50, 100, 481, 20))
+        self.inputFolderText.setObjectName(_fromUtf8("inputFolderText"))
+        self.MDFileText = QtGui.QLineEdit(self.centralwidget)
+        self.MDFileText.setGeometry(QtCore.QRect(50, 220, 481, 20))
+        self.MDFileText.setObjectName(_fromUtf8("MDFileText"))
+        self.outputFolderText = QtGui.QLineEdit(self.centralwidget)
+        self.outputFolderText.setGeometry(QtCore.QRect(50, 160, 481, 20))
+        self.outputFolderText.setObjectName(_fromUtf8("outputFolderText"))
+        self.label = QtGui.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(50, 70, 131, 31))
+        self.label.setObjectName(_fromUtf8("label"))
+        self.label_2 = QtGui.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(50, 130, 131, 31))
+        self.label_2.setObjectName(_fromUtf8("label_2"))
+        self.label_3 = QtGui.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(50, 190, 131, 31))
+        self.label_3.setObjectName(_fromUtf8("label_3"))
+        self.label_4 = QtGui.QLabel(self.centralwidget)
+        self.label_4.setGeometry(QtCore.QRect(50, 20, 481, 41))
+        self.label_4.setObjectName(_fromUtf8("label_4"))
+        self.progressBox = QtGui.QTextBrowser(self.centralwidget)
+        self.progressBox.setGeometry(QtCore.QRect(50, 410, 671, 131))
+        self.progressBox.setObjectName(_fromUtf8("progressBox"))
+        self.label_5 = QtGui.QLabel(self.centralwidget)
+        self.label_5.setGeometry(QtCore.QRect(50, 375, 111, 31))
+        self.label_5.setObjectName(_fromUtf8("label_5"))
+        self.saveLogBttn = QtGui.QPushButton(self.centralwidget)
+        self.saveLogBttn.setGeometry(QtCore.QRect(50, 550, 91, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.saveLogBttn.setFont(font)
+        self.saveLogBttn.setObjectName(_fromUtf8("saveLogBttn"))
+        self.startBttn = QtGui.QPushButton(self.centralwidget)
+        self.startBttn.setGeometry(QtCore.QRect(250, 320, 191, 51))
+        font = QtGui.QFont()
+        font.setFamily(_fromUtf8("Arial"))
+        font.setPointSize(14)
+        font.setBold(True)
+        font.setWeight(75)
+        self.startBttn.setFont(font)
+        self.startBttn.setObjectName(_fromUtf8("startBttn"))
+        self.inputBrowseBttn = QtGui.QPushButton(self.centralwidget)
+        self.inputBrowseBttn.setGeometry(QtCore.QRect(550, 94, 91, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.inputBrowseBttn.setFont(font)
+        self.inputBrowseBttn.setObjectName(_fromUtf8("inputBrowseBttn"))
+        self.outputBrowseBttn = QtGui.QPushButton(self.centralwidget)
+        self.outputBrowseBttn.setGeometry(QtCore.QRect(550, 153, 91, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.outputBrowseBttn.setFont(font)
+        self.outputBrowseBttn.setObjectName(_fromUtf8("outputBrowseBttn"))
+        self.MDFileBrowseBttn = QtGui.QPushButton(self.centralwidget)
+        self.MDFileBrowseBttn.setGeometry(QtCore.QRect(550, 214, 91, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.MDFileBrowseBttn.setFont(font)
+        self.MDFileBrowseBttn.setObjectName(_fromUtf8("MDFileBrowseBttn"))
+        self.closeBttn = QtGui.QPushButton(self.centralwidget)
+        self.closeBttn.setGeometry(QtCore.QRect(570, 550, 151, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        font.setBold(True)
+        font.setWeight(75)
+        self.closeBttn.setFont(font)
+        self.closeBttn.setObjectName(_fromUtf8("closeBttn"))
+        self.SIPJARBrowseBttn = QtGui.QPushButton(self.centralwidget)
+        self.SIPJARBrowseBttn.setGeometry(QtCore.QRect(550, 274, 91, 31))
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.SIPJARBrowseBttn.setFont(font)
+        self.SIPJARBrowseBttn.setObjectName(_fromUtf8("SIPJARBrowseBttn"))
+        self.SIPJarText = QtGui.QLineEdit(self.centralwidget)
+        self.SIPJarText.setGeometry(QtCore.QRect(50, 280, 481, 20))
+        self.SIPJarText.setObjectName(_fromUtf8("SIPJarText"))
+        self.label_6 = QtGui.QLabel(self.centralwidget)
+        self.label_6.setGeometry(QtCore.QRect(50, 250, 211, 31))
+        self.label_6.setObjectName(_fromUtf8("label_6"))
+        DiskImagePackager.setCentralWidget(self.centralwidget)
+        self.menubar = QtGui.QMenuBar(DiskImagePackager)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 778, 21))
+        self.menubar.setObjectName(_fromUtf8("menubar"))
+        DiskImagePackager.setMenuBar(self.menubar)
+        self.statusbar = QtGui.QStatusBar(DiskImagePackager)
+        self.statusbar.setObjectName(_fromUtf8("statusbar"))
+        DiskImagePackager.setStatusBar(self.statusbar)
+
+        self.retranslateUi(DiskImagePackager)
+        QtCore.QObject.connect(self.inputBrowseBttn, QtCore.SIGNAL(_fromUtf8("clicked()")), DiskImagePackager.chooseInputFolder)
+        QtCore.QObject.connect(self.outputBrowseBttn, QtCore.SIGNAL(_fromUtf8("clicked()")), DiskImagePackager.chooseOutputFolder)
+        QtCore.QObject.connect(self.MDFileBrowseBttn, QtCore.SIGNAL(_fromUtf8("clicked()")), DiskImagePackager.chooseMetadataFile)
+        QtCore.QObject.connect(self.startBttn, QtCore.SIGNAL(_fromUtf8("clicked()")), DiskImagePackager.startPackaging)
+        QtCore.QObject.connect(self.saveLogBttn, QtCore.SIGNAL(_fromUtf8("clicked()")), DiskImagePackager.saveLog)
+        QtCore.QObject.connect(self.closeBttn, QtCore.SIGNAL(_fromUtf8("clicked()")), DiskImagePackager.closeProgram)
+        QtCore.QObject.connect(self.SIPJARBrowseBttn, QtCore.SIGNAL(_fromUtf8("clicked()")), DiskImagePackager.chooseSIPJARFile)
+        QtCore.QMetaObject.connectSlotsByName(DiskImagePackager)
+
+    def retranslateUi(self, DiskImagePackager):
+        DiskImagePackager.setWindowTitle(_translate("DiskImagePackager", "Disk Image Packager", None))
+        self.label.setText(_translate("DiskImagePackager", "<html><head/><body><p><span style=\" font-size:16pt;\">Input Folder</span></p></body></html>", None))
+        self.label_2.setText(_translate("DiskImagePackager", "<html><head/><body><p><span style=\" font-size:16pt;\">Output Folder</span></p></body></html>", None))
+        self.label_3.setText(_translate("DiskImagePackager", "<html><head/><body><p><span style=\" font-size:16pt;\">Metadata File</span></p></body></html>", None))
+        self.label_4.setText(_translate("DiskImagePackager", "<html><head/><body><p><span style=\" font-size:20pt;\">Disk Image Packager for Preservica</span></p></body></html>", None))
+        self.label_5.setText(_translate("DiskImagePackager", "<html><head/><body><p><span style=\" font-size:16pt;\">Progress</span></p></body></html>", None))
+        self.saveLogBttn.setText(_translate("DiskImagePackager", "Save Log", None))
+        self.startBttn.setText(_translate("DiskImagePackager", "Begin Packaging", None))
+        self.inputBrowseBttn.setText(_translate("DiskImagePackager", "Browse", None))
+        self.outputBrowseBttn.setText(_translate("DiskImagePackager", "Browse", None))
+        self.MDFileBrowseBttn.setText(_translate("DiskImagePackager", "Browse", None))
+        self.closeBttn.setText(_translate("DiskImagePackager", "Close Packager", None))
+        self.SIPJARBrowseBttn.setText(_translate("DiskImagePackager", "Browse", None))
+        self.label_6.setText(_translate("DiskImagePackager", "<html><head/><body><p><span style=\" font-size:16pt;\">SIP Creator JAR file</span></p></body></html>", None))
+
